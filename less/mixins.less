@@ -1,1 +1,13 @@
-// Mixins in here
+.custom-btn(@bg-color) {
+    background: @bg-color;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    text-align: center;
+    width: 85%;
+    &:hover {
+        background: darken(@bg-color, 10%);
+    }
+}

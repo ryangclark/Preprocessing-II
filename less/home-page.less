@@ -1,14 +1,20 @@
 .home {
-
+  .btn {
+    .custom-btn(@button-bg-alpha);
+  }
   .content-section {
-    margin: 0 auto 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border-bottom: 2px dashed @navigation-border;
+    margin: 0 auto 30px;
 
     .fun-bus {
       margin-bottom: 2rem;
+    }
+
+    &.introduction-content {
+      border-bottom: 2px dashed @navigation-border;
+      padding-bottom: 20px;
     }
     
     .text-content {
@@ -28,7 +34,7 @@
 
   .inverse-content {
     padding-bottom: 30px;
-    // border-bottom: 2px dashed @navigation-border;
+    border-bottom: 2px dashed @navigation-border;
 
     .text-content {
       padding-left: 1%;
@@ -42,7 +48,7 @@
   }
 
   .content-destination {
-    width: 75%;
+    width: 60%;
     margin: 0 auto 30px;
 
     img {

@@ -212,15 +212,31 @@ nav div a {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .btn {
+  background: teal;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  text-align: center;
+  width: 85%;
+}
+.home .btn:hover {
+  background: #004d4d;
+}
 .home .content-section {
-  margin: 0 auto 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border-bottom: 2px dashed #C0C0C0;
+  margin: 0 auto 30px;
 }
 .home .content-section .fun-bus {
   margin-bottom: 2rem;
+}
+.home .content-section.introduction-content {
+  border-bottom: 2px dashed #C0C0C0;
+  padding-bottom: 20px;
 }
 .home .content-section .text-content {
   width: 48%;
@@ -235,6 +251,7 @@ nav div a {
 }
 .home .inverse-content {
   padding-bottom: 30px;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -245,7 +262,7 @@ nav div a {
   padding-left: 0;
 }
 .home .content-destination {
-  width: 75%;
+  width: 60%;
   margin: 0 auto 30px;
 }
 .home .content-destination img {
