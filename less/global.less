@@ -7,11 +7,11 @@ html {
 }
 
 html, body {
-  font-family: 'Roboto', sans-serif;
+  font-family: @font-body;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: @font-hed;
 }
 
 h1 {
@@ -40,7 +40,15 @@ img {
 }
 
 .container {
-  max-width: 800px;
+  background: @main-bg;
+  max-width: @max-break;
   width: 100%;
   margin: 0 auto;
+  footer, header, section, {
+    margin: 0 auto;
+    max-width: @content-width-max;
+  }
+}
+.line-div {
+  border-bottom: 2px dashed @navigation-border;
 }
