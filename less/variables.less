@@ -1,9 +1,10 @@
 // Breakpoints
-@max-break: 1024px;
-@min-break: 500px;
+@max-container: 1024px;
+@max-break: (max-width: @max-container);
+@min-break: (max-width: 500px);
 
-@content-width-max: 800px;
-@content-width-min: 500px;
+@content-width-max: 80%;
+@content-width-min: 90%;
 
 // Color assignments 
 @button-bg-alpha: @teal;

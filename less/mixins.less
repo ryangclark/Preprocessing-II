@@ -1,4 +1,5 @@
-.custom-btn(@bg-color) {
+// .custom-btn(@button-bg-bravo, 85%)
+.custom-btn(@bg-color, @btn-width) {
     background: @bg-color;
     border-radius: 12px;
     color: white;
@@ -6,7 +7,7 @@
     font-size: 1.8rem;
     padding: 1rem 0;
     text-align: center;
-    width: 85%;
+    width: @btn-width;
     &:hover {
         background: darken(@bg-color, 10%);
     }
