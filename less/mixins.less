@@ -1,1 +1,14 @@
-// Mixins in here
+// .custom-btn(@button-bg-bravo, 85%)
+.custom-btn(@bg-color, @btn-width) {
+    background: @bg-color;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    text-align: center;
+    width: @btn-width;
+    &:hover {
+        background: darken(@bg-color, 10%);
+    }
+}
